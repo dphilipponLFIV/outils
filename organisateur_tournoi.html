@@ -16,11 +16,26 @@
             padding: 0;
             margin: 0;
         }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 30px;
             margin-bottom: 30px;
+            gap: 20px;
+        }
+        .header img {
+            height: 100px;
+            width: auto;
+            display: block;
+        }
+        .header-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            line-height: 1.1;
+            margin: 0;
+            padding: 0;
         }
         .container {
             display: flex;
@@ -167,11 +182,18 @@
                 max-width: 100%;
                 width: 100%;
             }
+            .header {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1><img src="./img/Logo-LFIV.webp" />Organisateur de Tournoi</h1>
+    <div class="header">
+        <img src="./img/Logo-LFIV.webp" alt="Logo tournoi">
+        <span class="header-title">Organisateur de Tournoi</span>
+    </div>
     <div class="container">
         <div class="input-section">
             <h2>Configuration du Tournoi</h2>
